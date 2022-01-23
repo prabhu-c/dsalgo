@@ -84,7 +84,7 @@ def buddySystem_set_bits(arr: List[int], offset, length):
                 # This node is less than offset, check its children
                 end = dfs_set_nodes(arr, left)
 
-                if end == False:                # ralready reach length no need to traverse further
+                if end == False:                # already reached length no need to traverse further
                     dfs_set_nodes(arr, right)
         else:
             return end
@@ -131,7 +131,7 @@ def buddySystem_clear_bits(arr: List[int], offset, length):
                 # This node is less than offset, check its children
                 end = dfs_clear_nodes(arr, left)
 
-                if end == False:             # already reach length no need to traverse further
+                if end == False:             # already reached length no need to traverse further
                     end = dfs_clear_nodes(arr, right)
         else:
             return end
