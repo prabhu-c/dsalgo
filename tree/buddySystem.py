@@ -125,6 +125,8 @@ def buddySystem_clear_bits(arr: List[int], offset, length):
                 arr[index-1] = 0
                 end = False
                 # no action to the children
+                    # force update 0
+                    # dfs_update_allnodes(arr, index, 0)
             else:
                 # This node is less than offset, check its children
                 end = dfs_clear_nodes(arr, left)
